@@ -1,16 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: black; */
+  /* background-color: #242424; */
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
@@ -28,6 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
 }
 
 h1 {
@@ -65,4 +70,79 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.app {
+  background-color: hsl(0, 0%, 100%);
+  width: 850px;
+  height: 620px;
+  border-radius: 20px 20px 180px 20px;
+  padding: 60px;
+}
+
+label {
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+
+hr {
+  width: 100%;
+  border: 0.8px solid hsl(0, 0%, 86%);
+}
+
+input {
+  font-size: 32px;
+  width: 150px;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+.input-invalid {
+  label {
+    color: hsl(0, 100%, 67%);
+  }
+  input {
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+  .input-invalid-text {
+    font-size: 12px;
+    color: hsl(0, 100%, 67%);
+    font-weight: 300;
+  }
+}
+
+.submit-button {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.submit-button:hover {
+  background-color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+  transition: all ease-in-out 0.2s;
+}
+
+.submit-button:focus {
+  outline: none !important;
+}
+
+p {
+  font-size: 100px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1;
+}
+
+.result {
+  color: hsl(259, 100%, 65%);
 }
